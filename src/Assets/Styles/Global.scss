@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background: #f4f4f4;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+
+  h1,h2,h3 {
+    font-weight: 500;
+    margin: 0 20px 20px 0;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  table {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fff;
+    border-collapse: collapse;
+    
+    thead {
+      font-size: 15px;
+      background-color: #e9ebf0;
+      th {
+        padding: 10px;
+        text-align: left;
+      }
+    }
+    tbody {
+      font-size: 14px;
+      td {
+        color: #555;
+        padding: 15px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        span {
+          margin-right: 10px;
+        }
+      }
+      tr:nth-child(2n) {
+        background-color:#f6f7fa;
+      }
+    }
+  }
+
+  select {
+    padding: 5px 15px;
+    margin-left: 10px;
+    border-radius: 50px;
+    border: 1px solid #999;
+  }
+}
+
+@import "Fonts.scss"
