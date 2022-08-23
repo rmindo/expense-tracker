@@ -56,6 +56,7 @@ export default class Dashboard extends React.PureComponent {
         * Update stats
         */
         this.setState({
+          data,
           add: false,
           today: today + added.amount,
           month: month + added.amount,
