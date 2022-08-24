@@ -125,15 +125,15 @@ export default {
       })
     }
     
-    
-    while(count <= (today.getMonth()+1)) {
+    var numberOfMonths = (today.getMonth()+1)
+    while(count <= numberOfMonths) {
       var month = count.toString()
     
       if(month.toString().length == 1) {
         month = `0${month}`
       }
     
-      if(count < 4) {
+      if(count < numberOfMonths) {
         Array.from({length: 30}, (v,i) => expense(i+1, month))
       }
       else {
